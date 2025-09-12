@@ -3,8 +3,7 @@ import { ArrowDown } from 'lucide-react';
 
 export const Hero = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      {/* Video Background */}
+    <div className=" relative w-full h-screen overflow-hidden">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         autoPlay
@@ -12,34 +11,35 @@ export const Hero = () => {
         loop
         playsInline
       >
-        <source src="/bg-video.mp4" type="video/mp4" />
+        <source src="/bg-video-2.mp4" type="video/mp4" />
         {/* Fallback for browsers that don't support video */}
         Your browser does not support the video tag.
       </video>
+      <div className="absolute top-0 left-0 w-full h-full bg-[#f5f4f2]/95"></div>
 
-      {/* Black Semi-Transparent Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black/90"></div>
-
-      {/* Content that goes over the video and overlay */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
-        <div className="text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Victory Pastures
+      <div className="relative z-10 mx-auto w-[910px] flex flex-col items-center justify-center h-full text-center text-black">
+        <div className="space-y-5 text-center px-4">
+          <p className="font-semibold text-lg">Bible focused, Spirit Led</p>
+          <h1 className="text-8xl font-light tracking-wider  uppercase mb-4 leading-28">
+            Welcome to victory
+            <span className="px-3 rounded-tl-4xl rounded-br-2xl rounded-tr-2xl bg-blue-500 text-white">
+              pastures
+            </span>
           </h1>
-          <p className="text-lg md:text-xl mb-8 max-w-2xl">
+          <p className="text-lg md:text-xl mb-8">
             Christ is our focus. Heaven is our ultimate goal. Join us to worship
             today!
           </p>
           <Button
             size={'lg'}
-            className="bg-white text-black px-10 py-8 rounded-lg font-semibold capitalize text-xl hover:bg-gray-100 transition-colors"
+            className="bg-blue-500 text-white px-10 py-8 rounded-lg font-semibold capitalize text-xl hover:bg-gray-100 transition-colors"
           >
             Join us this weekend
           </Button>
         </div>
         <a
           href="#about"
-          className="text-white absolute bottom-1 flex flex-col items-center justify-center pb-5 animate-pulse"
+          className="text-black absolute bottom-1 flex flex-col items-center justify-center pb-5 animate-pulse"
         >
           <p>Scroll Down</p>
           <ArrowDown />

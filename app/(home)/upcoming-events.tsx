@@ -41,12 +41,12 @@ const carouselItems = [
 
 export const UpcomingEvents = () => {
   return (
-    <div className="space-y-10 bg-blue-200 p-24 w-full h-full py-20">
-      <div className="flex flex-col space-y-4">
+    <div className="space-y-10 rounded-t-[64px] bg-blue-200 p-24 w-full h-full py-20">
+      <div className=" bg-blue-200 flex flex-col space-y-4">
         <h2 className="max-w-7xl text-xl md:text-6xl tracking-tighter text-neutral-800 dark:text-neutral-200">
           Upcoming <span className="font-semibold">Services.</span>
         </h2>
-        <p>
+        <p className="max-w-5xl">
           Join us for our upcoming worship services, special events, and
           community gatherings. Experience meaningful fellowship, inspiring
           messages, and opportunities to grow in faith together as we serve our
