@@ -38,13 +38,13 @@ export const SocialMedia = () => {
         moments as we grow together in faith
       </p>
       <Carousel
-        plugins={[Autoplay({ stopOnInteraction: true })]}
+        plugins={[Autoplay({ stopOnMouseEnter: true })]}
         className=" w-full my-10"
       >
         <CarouselContent>
           {instagram_links.map((item) => (
             <CarouselItem key={item.src} className="md:basis-1/2 lg:basis-1/4">
-              <div className="size-80 relative rounded-lg overflow-hidden">
+              <div className="size-100 relative rounded-lg overflow-hidden">
                 <iframe
                   src={item.src}
                   height="540"
