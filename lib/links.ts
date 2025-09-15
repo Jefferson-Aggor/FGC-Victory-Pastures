@@ -7,7 +7,7 @@ export const links = [
   },
   {
     name: 'Our Stories',
-    href: '/about',
+    href: '/our-story',
   },
   {
     name: 'Events',
